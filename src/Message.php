@@ -35,7 +35,7 @@ class Message
      * @param array $headers
      * @return Message
      */
-    public static function resolve(string $body, array $headers): Message
+    public static function resolve(string $body, array $headers = []): Message
     {
         return new self(json_decode($body, true), $headers);
     }

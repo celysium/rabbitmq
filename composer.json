@@ -1,6 +1,6 @@
 {
   "name": "celysium/rabbitmq",
-  "description": "rabbitmq message broker package",
+  "description": "RabbitMQ message broker package",
   "autoload": {
     "psr-4": {
       "Celysium\\RabbitMQ\\": "src/"
