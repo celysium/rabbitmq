@@ -1,0 +1,33 @@
+{
+  "name": "celysium/rabbitmq",
+  "description": "rabbitmq message broker package",
+  "autoload": {
+    "psr-4": {
+      "Celysium\\RabbitMQ\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Nasser Hekmati",
+      "email": "hekmati.nasser@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4|^8.2",
+    "laravel/framework": "*",
+    "php-amqplib/php-amqplib": "^3.7",
+    "ext-json": "*"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "RabbitMQServiceProvider"
+      ],
+      "aliases": {
+        "RabbitMQ": "Celysium\\RabbitMQ\\Facades\\RabbitMQ"
+      }
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
